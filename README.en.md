@@ -102,4 +102,3 @@ script in the `package.json` file.
 3. If all steps are successful, the built production version of the project
    files is sent to the `gh-pages` branch. Otherwise, the script execution log
    will indicate what the problem is.
-4. need to build
