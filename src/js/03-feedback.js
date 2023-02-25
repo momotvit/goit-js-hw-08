@@ -62,6 +62,11 @@ function uploadDataFromLocalStorageToTextArea() {
 uploadDataFromLocalStorageToTextArea()
 
 
+document.addEventListener('keydown', (event) => {
+    if (event.key === 'Enter') {
+        onFormSubmit(event);
+    }
+});
 
 
 
