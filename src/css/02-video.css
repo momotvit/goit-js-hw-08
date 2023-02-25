@@ -1,0 +1,7 @@
+  .iframe__wraper {
+      display: flex;
+      justify-content: center;
+      outline: 5px black solid;
+      background-color: aqua;
+      padding: 30px;
+  }
