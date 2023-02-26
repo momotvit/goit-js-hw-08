@@ -1,5 +1,4 @@
 
-
 import throttle from 'lodash.throttle';
 
 const form = document.querySelector('.feedback-form');
@@ -26,11 +25,10 @@ function uploadDataFromLocalStorageToTextArea(){
 };
 
 function onFormSubmit(event){
-    
+    event.preventDefault();
     if (emailInput.value === '' || messageInput.value === '') {
         return alert('Fill all of the fields, please');
     }
-    event.preventDefault();
     onInputLocalStorageDataChange();
     console.log(localStorageDataChange);
     localStorage.removeItem(LOCALSTORAGE_KEY);
